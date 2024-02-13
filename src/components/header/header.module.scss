@@ -1,0 +1,24 @@
+@use "../../styles/theme/colors";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+  border-bottom: 1px solid colors.$color-10;
+}
+
+.headerLinks {
+  display: flex;
+  gap: 5.4rem;
+  font-size: 2rem;
+
+  a {
+    color: colors.$color-10;
+    text-decoration: inherit;
+
+    &:hover {
+      color: colors.$color-7;
+    }
+  }
+}
