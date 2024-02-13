@@ -1,0 +1,14 @@
+@use '@/styles/theme/colors';
+
+.socialLogoBox {
+    background-color: colors.$color-7;
+    border: 1px solid hsla(199, 33%, 18%, 1);
+    border-radius: 8px;
+    padding: 0.8rem;
+    width: 3.2rem;
+    height: auto;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
