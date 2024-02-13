@@ -1,8 +1,5 @@
-// TODO update breakpoints by web app usage
-
-$breakpoints: (
-  'xs': 576,
-  'sm': 768,
-  'md': 992,
-  'lg': 1200,
-);
+$breakpoint-xs: 28.125em; // 450px
+$breakpoint-sm: 37.5em; // 600px
+$breakpoint-md: 56.25em; // 900px
+$breakpoint-lg: 75em; // 1200px
+$breakpoint-xl: 125em; // 2000px

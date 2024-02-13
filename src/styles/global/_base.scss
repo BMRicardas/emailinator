@@ -2,7 +2,7 @@
 
 html {
     // This defines what 1rem is
-    font-size: calc(10 / variables.$fontSize * 100%); // 10px
+    font-size: 62.5%; /* 1rem = 10px */
     font-family: 'Noto Sans', sans-serif;
   }
   

@@ -1,31 +1,25 @@
-// Blues
-$dark-blue: hsl(227, 6%, 15%); // #1F343E
-$royal-blue: hsl(202, 100%, 59%); // #2072F3
-$sky-blue: hsl(191, 100%, 52%); // #18BFFB
-
-// Greys
-$dark-gray: hsl(209, 7%, 21%); // #434A54
-$mid-gray: hsl(210, 8%, 32%); // #6D7A80
-$darker-gray: hsl(220, 7%, 24%); // #45565E
-$light-gray: hsl(210, 5%, 82%); // #BDC1C3
-$very-light-gray: hsl(0, 0%, 91%); // #E3E4E5
-
-// Reds
-$red-pink: hsl(356, 81%, 70%); // #ED6F82
-$bright-red: hsl(359, 99%, 80%); // #FD6F71
-$pink: hsl(329, 100%, 50%); // #FF007C
-
-// Other
-$light-teal: hsl(188, 84%, 73%); // #4EB3E3
-$orange-yellow: hsl(43, 80%, 80%); // #F8CC5D
-$light-pink: hsl(305, 98%, 99%); // #F8F4F9
-$lime-green: hsl(86, 81%, 50%); // #8CD943
-$light-orange: hsl(32, 92%, 80%); // #FED2A4
-$black: hsl(0, 0%, 0%, 0.5); // #000000
-$white: hsl(0, 0%, 100%); // #FFFFFF
-$very-light-beige: hsl(200, 7%, 92%); // #E8EAEB
-
-// Please check and define these colors with correct hex codes or as needed:
-// #0D275028 (invalid format)
-// #0D275029 (invalid format)
-// #1F343E28 (use with desired alpha value separately)
+$color-1: hsla(0, 0%, 100%, 1);
+$color-2: hsla(0, 0%, 0%, 1);
+$color-3: hsla(31, 98%, 82%, 1);
+$color-4: hsla(43, 92%, 67%, 1);
+$color-5: hsla(91, 66%, 56%, 1);
+$color-6: hsla(180, 1%, 67%, 1);
+$color-7: hsla(199, 73%, 60%, 1); /* used */
+$color-8: hsla(199, 8%, 46%, 1);
+$color-9: hsla(199, 15%, 32%, 1);
+$color-10: hsla(199, 33%, 18%, 1); /* used */
+$color-11: hsla(200, 5%, 75%, 1);
+$color-12: hsla(200, 7%, 92%, 1);
+$color-13: hsla(210, 4%, 89%, 1);
+$color-14: hsla(214, 16%, 92%, 1);
+$color-15: hsla(215, 11%, 30%, 1);
+$color-16: hsla(217, 72%, 18%, 0.16);
+$color-17: hsla(217, 90%, 54%, 1);
+$color-18: hsla(240, 3%, 94%, 1);
+$color-19: hsla(288, 29%, 97%, 1);
+$color-20: hsla(331, 100%, 50%, 1);
+$color-21: hsla(351, 78%, 68%, 1);
+$color-22: hsla(359, 97%, 71%, 1);
+/* 
+hsla(288, 29%, 97%, 1)
+*/
