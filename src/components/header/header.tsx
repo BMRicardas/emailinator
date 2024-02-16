@@ -1,10 +1,10 @@
 import Image from "next/image";
 
+import { Container } from "@/ui";
+
 import ratepunk from "@/public/assets/logo.svg";
 
 import styles from "./header.module.scss";
-
-interface Props {}
 
 const headerLinks = [
   {
@@ -21,17 +21,23 @@ const headerLinks = [
   },
 ];
 
-export function Header({}: Props) {
+export function Header() {
   return (
-    <header className={styles.header}>
-      <Image src={ratepunk} alt="Ratepunk logo" className={styles.logo} />
-      <ul className={styles.headerLinks}>
-        {headerLinks.map((link) => (
-          <li key={link.label}>
-            <a href={link.href}>{link.label}</a>
-          </li>
-        ))}
-      </ul>
+    <header className={styles.headerContainer}>
+      <Container>
+        <nav className={styles.header}>
+          <a href="/">
+            <Image src={ratepunk} alt="Ratepunk logo" className={styles.logo} />
+          </a>
+          <ul className={styles.headerLinks}>
+            {headerLinks.map((link) => (
+              <li key={link.label}>
+                <a href={link.href}>{link.label}</a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </Container>
     </header>
   );
 }

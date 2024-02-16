@@ -1,0 +1,62 @@
+@use "../../styles/theme/colors";
+@use "../../styles/mixins/breakpoints";
+
+.mobileHeader {
+  display: none;
+
+  @include breakpoints.mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5.6rem;
+  }
+}
+
+.button {
+  background: none;
+  border: none;
+  height: 1.8rem;
+  width: 1.8rem;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: solid;
+  }
+}
+
+.menuLinks {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  inset-block-start: 5.6rem;
+  padding-block-start: 3rem;
+  padding-inline: 1.6rem;
+  width: 100%;
+  background-color: colors.$white;
+  z-index: 2;
+  border-bottom: 1px solid colors.$color-3;
+
+  &[aria-hidden="true"] {
+    display: none;
+  }
+}
+
+.link {
+  font-size: 1.6rem;
+  margin-block-end: 2.7rem;
+
+  a {
+    color: colors.$color-3;
+    text-decoration: inherit;
+
+    &:hover {
+      color: colors.$secondary;
+    }
+  }
+}

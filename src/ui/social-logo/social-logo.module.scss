@@ -1,14 +1,16 @@
-@use '@/styles/theme/colors';
+@use "@/styles/theme/colors";
 
-.socialLogoBox {
-    background-color: colors.$color-7;
-    border: 1px solid hsla(199, 33%, 18%, 1);
-    border-radius: 8px;
-    padding: 0.8rem;
-    width: 3.2rem;
-    height: auto;
+.logoBox {
+  display: block;
+  background-color: colors.$secondary;
+  border: 1px solid hsla(199, 33%, 18%, 1);
+  border-radius: 8px;
+  padding: 0.8rem;
+  width: 3.2rem;
+  height: 3.2rem;
+}
 
-    &:hover {
-        cursor: pointer;
-    }
+.logo {
+  width: 100%;
+  height: 100%;
 }

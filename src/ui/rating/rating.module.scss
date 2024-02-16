@@ -1,0 +1,33 @@
+@use "../../styles/mixins/breakpoints";
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+
+  @include breakpoints.mobile {
+    justify-content: center;
+  }
+}
+
+.ratingStars {
+  display: flex;
+  gap: 0.5rem;
+  @include breakpoints.mobile {
+    gap: 0.4rem;
+  }
+}
+
+.image {
+  height: 2rem;
+  width: auto;
+}
+
+.text {
+  font-size: 2rem;
+  color: #fff;
+
+  @include breakpoints.mobile {
+    font-size: 1.6rem;
+  }
+}

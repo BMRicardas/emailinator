@@ -1,0 +1,140 @@
+@use "../../styles/theme/colors";
+@use "../../styles/mixins/breakpoints";
+
+.mainContentContainer {
+  background-color: colors.$primary;
+}
+
+.mainContent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12.8rem;
+  padding-block: 6.4rem;
+
+  @include breakpoints.laptop {
+    gap: 6.4rem;
+  }
+
+  @include breakpoints.mobile {
+    display: block;
+    padding-block-start: 3.2rem;
+    padding-block-end: 4.8rem;
+  }
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 7.2rem;
+  height: 100%;
+}
+
+.cardHeader {
+  color: colors.$color-3;
+  font-family: "Caveat Brush";
+  font-size: 4.8rem;
+  text-transform: uppercase;
+  margin-block-end: 3.2rem;
+  text-wrap: balance;
+  line-height: 1.5;
+
+  @include breakpoints.laptop {
+    font-size: 4rem;
+  }
+
+  @include breakpoints.mobile {
+    font-size: 3.2rem;
+    margin-block-end: 2.4rem;
+  }
+}
+
+.cardDescription {
+  font-size: 2rem;
+  margin-block-end: 6.4rem;
+  text-wrap: balance;
+  line-height: 1.5;
+
+  @include breakpoints.mobile {
+    font-size: 1.6rem;
+    margin-block-end: 2.4rem;
+  }
+}
+
+.inputContainer {
+  position: relative;
+  margin-block-end: 1.6rem;
+}
+
+.emailIcon {
+  position: absolute;
+  inset: 0;
+  margin-block: auto;
+  margin-inline-start: 2rem;
+
+  @include breakpoints.mobile {
+    margin-inline-start: 1.6rem;
+  }
+}
+
+.emailInput {
+  border: 1px solid hsla(199, 33%, 18%, 1);
+  border-radius: 8px;
+  width: 100%;
+  padding-block: 2rem;
+  padding-inline-start: 6rem;
+  font-size: 2rem;
+
+  @include breakpoints.mobile {
+    font-size: 1.6rem;
+    padding-block: 1.8rem;
+    padding-inline-start: 4.8rem;
+  }
+}
+
+.button {
+  background-color: hsla(199, 73%, 60%, 1);
+  border: 1px solid hsla(199, 33%, 18%, 1);
+  border-radius: 8px;
+  padding-block: 2rem;
+  width: 100%;
+  color: colors.$white;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+
+  @include breakpoints.mobile {
+    font-size: 1.6rem;
+    padding-block: 1.7rem;
+  }
+}
+
+.cardDisclaimer {
+  color: hsla(199, 8%, 46%, 1);
+  font-size: 1.6rem;
+}
+
+.steps {
+  padding-block: 6.4rem;
+
+  @include breakpoints.mobile {
+    padding-block-start: 4.8rem;
+    padding-block-end: 0;
+  }
+}
+
+.success {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-block-end: 1.6rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.error {
+  display: block;
+  font-size: 1.2rem;
+  color: colors.$danger;
+  margin-block-end: 0.7rem;
+}

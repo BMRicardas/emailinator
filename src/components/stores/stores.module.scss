@@ -1,0 +1,32 @@
+@use "../../styles/theme/colors";
+@use "../../styles/mixins/breakpoints";
+
+.storesContainer {
+  border: 1px solid hsla(199, 33%, 18%, 1);
+  background-color: colors.$color-2;
+}
+
+.stores {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  padding-block: 3.2rem;
+
+  @include breakpoints.laptop {
+    flex-direction: column;
+  }
+
+  @include breakpoints.mobile {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+}
+
+.storesList {
+  display: flex;
+  gap: 1.6rem;
+
+  @include breakpoints.mobile {
+    flex-direction: column;
+  }
+}
