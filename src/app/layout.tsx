@@ -5,8 +5,8 @@ import "@/styles/global/index.scss";
 const inter = Noto_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Ratepunk",
-  description: "Ratepunk",
+  title: "Ratepunk - refer friends and get rewards",
+  description: "Ratepunk - refer friends and get rewards",
 };
 
 export default function RootLayout({

@@ -38,6 +38,7 @@
   margin-block-end: 3.2rem;
   text-wrap: balance;
   line-height: 1.5;
+  font-weight: 400;
 
   @include breakpoints.laptop {
     font-size: 4rem;
