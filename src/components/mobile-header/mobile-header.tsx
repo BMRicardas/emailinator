@@ -1,6 +1,9 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
+
+import { useLockedBody } from "@/utils/hooks/use-locked-body";
 
 import { Container } from "@/ui";
 
@@ -9,8 +12,6 @@ import menu from "@/public/assets/menu.svg";
 import close from "@/public/assets/close.svg";
 
 import styles from "./mobile-header.module.scss";
-import { useState } from "react";
-import { useLockedBody } from "@/utils/hooks/use-locked-body";
 
 const headerLinks = [
   {
