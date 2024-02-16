@@ -1,31 +1,13 @@
-@use '../variables';
-
+// 750px
 @mixin mobile {
-  @media screen and (max-width: variables.$breakpoint-xs) {
+  @media screen and (max-width: 46.875em) {
     @content;
   }
 }
 
-@mixin tablet {
-  @media screen and (max-width: variables.$breakpoint-sm) {
-    @content;
-  }
-}
-
+// 1100px
 @mixin laptop {
-  @media screen and (max-width: variables.$breakpoint-md) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media screen and (max-width: variables.$breakpoint-lg) {
-    @content;
-  }
-}
-
-@mixin xl-desktop {
-  @media screen and (max-width: variables.$breakpoint-xl) {
+  @media screen and (max-width: 68.75em) {
     @content;
   }
 }

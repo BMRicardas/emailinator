@@ -1,12 +1,19 @@
-import { Container } from "@/ui/container/container";
-import { Footer, Header } from "@/components";
+import {
+  Footer,
+  Header,
+  MainContent,
+  MobileHeader,
+  Stores,
+} from "@/components";
 
 export default function Home() {
   return (
-    <Container>
+    <>
       <Header />
-      <main>Emailinator</main>
+      <MobileHeader />
+      <MainContent />
+      <Stores />
       <Footer />
-    </Container>
+    </>
   );
 }

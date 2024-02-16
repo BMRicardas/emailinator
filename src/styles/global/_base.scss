@@ -1,13 +1,12 @@
-@use "../variables";
+@use "../theme/colors";
+
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
 
 html {
-    // This defines what 1rem is
-    font-size: 62.5%; /* 1rem = 10px */
-    font-family: 'Noto Sans', sans-serif;
-  }
-  
-  body {
-    color: var(--color-grey-05);
-  
-    background-color: var(--color-grey-95);
-  }
+  // This defines what 1rem is
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  color: colors.$color-3;
+}

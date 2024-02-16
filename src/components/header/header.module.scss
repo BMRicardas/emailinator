@@ -1,11 +1,20 @@
 @use "../../styles/theme/colors";
+@use "../../styles/mixins/breakpoints";
+
+.headerContainer {
+  background-color: colors.$white;
+  border-bottom: 1px solid colors.$color-3;
+}
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 8rem;
-  border-bottom: 1px solid colors.$color-10;
+
+  @include breakpoints.mobile {
+    display: none;
+  }
 }
 
 .headerLinks {
@@ -14,11 +23,36 @@
   font-size: 2rem;
 
   a {
-    color: colors.$color-10;
+    color: colors.$color-3;
     text-decoration: inherit;
 
     &:hover {
-      color: colors.$color-7;
+      color: colors.$secondary;
     }
   }
+}
+
+// MOBILE HEADER
+
+.mobileHeader {
+  display: none;
+
+  @include breakpoints.mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5.6rem;
+  }
+}
+
+.menuButton {
+  border: none;
+  cursor: pointer;
+  height: 1.8rem;
+  width: 2rem;
+}
+
+.menuIcon {
+  height: 100%;
+  width: 100%;
 }

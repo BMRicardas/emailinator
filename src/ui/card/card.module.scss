@@ -1,0 +1,17 @@
+@use "../../styles/theme/colors";
+@use "../../styles/mixins/breakpoints";
+
+.card {
+  padding: 6.4rem;
+  border: 1px solid colors.$color-3;
+  border-radius: 16px;
+  background-color: colors.$color-4;
+
+  @include breakpoints.laptop {
+    padding: 3.2rem;
+  }
+
+  @include breakpoints.mobile {
+    padding-inline: 1.6rem;
+  }
+}

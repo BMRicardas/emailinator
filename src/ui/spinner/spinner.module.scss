@@ -1,0 +1,19 @@
+@use "../../styles/theme/colors";
+
+.loadingSpinner {
+  width: 2rem;
+  height: 2rem;
+  border: 0.5rem solid colors.$color-4;
+  border-top-color: colors.$color-1;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
